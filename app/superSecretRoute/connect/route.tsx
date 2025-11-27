@@ -32,7 +32,7 @@ function generateRandomString(length: number) {
 export async function GET(request: NextRequest) {
 
     if(request.nextUrl.searchParams.get("secret") !== process.env.AUTH_SECRET) {
-        return NextResponse.json({ message: "Unauthorized", secret: request.nextUrl.searchParams.get("secret"), fromEnv : process.env.AUTH_SECRET }, { status: 401 })
+        return NextResponse.json({ message: "Unauthorized", secret: request.nextUrl.searchParams.get("secret")}, { status: 401 })
     }
 
     const state = generateRandomString(16);
