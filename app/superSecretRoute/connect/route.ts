@@ -48,7 +48,7 @@ export async function GET(request: NextRequest) {
     response.cookies.set(STATE_KEY, state, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        maxAge: 60 * 10, // 10 minutes
+        maxAge: 60 * 60, // 10 minutes
         path: '/',
     });
 
