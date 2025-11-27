@@ -1,6 +1,6 @@
 // Resume playback
 import { NextRequest, NextResponse } from 'next/server';
-import { getSpotifyClient } from '../lib/spotify';
+import { getSpotifyClient } from '../../lib/spotify';
 
 export async function POST(req: NextRequest) {
   if (req.headers.get('authorization') !== `Bearer ${process.env.AUTH_SECRET}`) {
