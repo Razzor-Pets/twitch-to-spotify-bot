@@ -34,7 +34,7 @@ export async function GET(request: NextRequest) {
         <head><title>Spotify Connected!</title></head>
         <body style="font-family:system-ui;background:#000;color:#1db954;padding:40px;">
           <h1>Connected Successfully!</h1>
-          <p><strong>Save this refresh token in Vercel → Settings → Environment Variables</strong></p>
+          <p><strong>Save this refresh token in Vercel -> Settings -> Environment Variables</strong></p>
           <pre style="background:#111;padding:20px;border-radius:8px;overflow:auto;">
             <b>SPOTIFY_REFRESH_TOKEN=</b><span style="color:#1ed760;font-size:1.2em;">${refresh_token}</span>
                     </pre>
